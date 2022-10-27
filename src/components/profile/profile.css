@@ -1,0 +1,142 @@
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0 56px;
+    /* gap: 24px; */
+    /* isolation: isolate; */
+}
+#slack{
+    display: none;
+}
+
+#profile__img {
+    width: 88px;
+    height: 88px;
+    border-radius: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    transition: var(--transition);
+}
+.user:hover #profile__img {
+    display: none;
+}
+.user:hover #profile_img_hover{
+    display: block;
+}
+#profile__img:focus {
+    border: 5.5px solid var(--color-primary-100);
+}
+#profile_img_hover{
+    width: 88px;
+        height: 88px;
+        border-radius: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        display: none;
+}
+
+#twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#avatarDash, #menuDash {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--color-bg);
+    border: 1px dashed var(--color-gray-300);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+#avatarDash {
+    right: 208px;
+    top: 44px;
+}
+#menuDash{
+    right: 16px;
+    top: 44px;
+    display: none;
+}
+
+#avatarDash:hover, #menuDash:hover{
+        background: var(--color-gray-50);
+}
+#avatarDash:focus-visible, #menuDash:focus-visible {
+    /* Focus ring/4px gray-100 */
+    box-shadow: 0px 0px 0px 4px var(--color-gray-100);
+    border-radius: 20px;
+}
+#avatarDash:disabled{
+        background: var(--color-gray-50);
+        border: 1px dashed var(--color-gray-200);
+}
+#avatarDash:hover #cursor{
+    display: block;
+}
+#avatarDash:hover #Tooltip {
+    display: block;
+}
+
+#avatarContent, #menuContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 15%;
+    bottom: 15%;
+}
+
+#AvatarIcon, #menuIcon{
+    width: 20px;
+    height: 20px;
+    color: var(--color-gray-400);
+}
+
+#AvatarIcon:hover, #menuIcon:hover{
+    color: var(--color-gray-500);
+}
+#AvatarIcon:disabled, #menuIcon:disabled{
+    color: var(--color-gray-200);
+}
+#cursor{
+    display: none;
+    position: absolute;
+        left: 70%;
+        right: -20%;
+        top: 60%;
+        bottom: -10%;
+}
+#Tooltip{
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -3px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .profileSection {
+            padding: 64px 0 32px;
+    }
+    #avatarDash{
+        display: none;
+    }
+    #menuDash {
+        display: block;
+    }
+}

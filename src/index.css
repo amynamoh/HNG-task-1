@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-bg-variant: #EAECF0;
+  --color-primary-100: #EBE9FE;
+  --color-gray-25: #0a0a0b;
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F2F4F7;
+  --color-gray-200: #EAECF0;
+  --color-gray-300: #D0D5DD;
+  --color-gray-400: #98A2B3;
+  --color-gray-500: #667085;
+  --color-gray-900: #101828;
+  --transition: all 200ms ease-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-gray-900);
+  text-align: center;
+  letter-spacing: 0rem;
+}
+
+h1,
+h2,
+h3
+{
+  text-align: center;
+  letter-spacing: 0rem;
+  color: var(--color-gray-900);
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-gray-500);
+}
+
+section {
+  padding: 0 112px;
+}
+
+/* media queries (phone) */
+@media screen and (max-width: 600px) {
+
+    h1,
+    h2,
+    h3
+    {
+      text-align: center;
+      letter-spacing: 0rem;
+      color: var(--color-gray-900);
+    }
+  
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--color-gray-500);
+    }
+  
+    section {
+      padding: 0 16px;
+    }
+}
