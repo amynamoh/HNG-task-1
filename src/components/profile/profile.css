@@ -9,7 +9,6 @@
 #slack{
     display: none;
 }
-
 #profile__img {
     width: 88px;
     height: 88px;
@@ -41,7 +40,6 @@
         margin-bottom: 24px;
         display: none;
 }
-
 #twitter {
     display: flex;
     flex-direction: row;
@@ -49,94 +47,71 @@
     align-items: center;
     width: 100%;
 }
-
-#avatarDash, #menuDash {
+#share{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background: var(--color-bg);
-    border: 1px dashed var(--color-gray-300);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: var(--transition);
-}
-#avatarDash {
     right: 208px;
     top: 44px;
 }
-#menuDash{
-    right: 16px;
+#menu{
+    position: absolute;
+    right: 56px;
     top: 44px;
     display: none;
 }
-
-#avatarDash:hover, #menuDash:hover{
-        background: var(--color-gray-50);
+.dash a{
+    color: var(--color-gray-400);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px dashed var(--color-gray-300);
+    position: absolute;
+    background: var(--color-bg);
+    transition: var(--transition);
 }
-#avatarDash:focus, #menuDash:click {
+.dash a:hover{
+    background: var(--color-gray-50);
+}
+.dash a:focus {
     /* Focus ring/4px gray-100 */
     box-shadow: 0px 0px 0px 4px var(--color-gray-100);
-    border-radius: 20px;
 }
-#avatarDash:disabled{
+.dash a:click {
+    /* Focus ring/4px gray-100 */
+    box-shadow: 0px 0px 0px 4px var(--color-gray-100);
+}
+.dash a:disabled{
         background: var(--color-gray-50);
         border: 1px dashed var(--color-gray-200);
 }
-#avatarDash:hover #cursor{
-    display: block;
-}
-#avatarDash:hover #Tooltip {
-    display: block;
-}
-
-#avatarContent, #menuContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 15%;
-    bottom: 15%;
-}
-
-#AvatarIcon, #menuIcon{
-    width: 20px;
-    height: 20px;
-    color: var(--color-gray-400);
-}
-
-#AvatarIcon:hover, #menuIcon:hover{
-    color: var(--color-gray-500);
-}
-#AvatarIcon:disabled, #menuIcon:disabled{
-    color: var(--color-gray-200);
-}
-#cursor{
+#cursor {
     display: none;
     position: absolute;
-        left: 70%;
-        right: -20%;
-        top: 60%;
-        bottom: -10%;
+    top: 30px;
+    right: -40px;
 }
-#Tooltip{
+#Tooltip {
     display: none;
     position: absolute;
-    right: 100%;
-    top: -3px;
+    right: 0px;
+    top: 6px;
 }
-
+.dash:hover #cursor {
+    display: block;
+}
+.dash:hover #Tooltip {
+    display: block;
+}
 
 
 @media screen and (max-width: 600px) {
     .profileSection {
             padding: 64px 0 32px;
     }
-    #avatarDash{
+    #share{
         display: none;
     }
-    #menuDash {
+    #menu {
         display: block;
     }
     
