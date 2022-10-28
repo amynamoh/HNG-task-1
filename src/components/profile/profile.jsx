@@ -16,7 +16,7 @@ const profile = () => {
           <img id='profile_img_hover' src={profilePictureHover} alt="profilePictureHover" />
       </div>
         <div id='twitter'>
-            <h1>amynamoh</h1>
+            <h1>@amynamoh</h1>
         </div>
         <h2 id='slack'>Amina Mohammed</h2>
         <i></i>
