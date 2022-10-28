@@ -20,14 +20,6 @@ const profile = () => {
         </div>
         <h2 id='slack'>Amina Mohammed</h2>
         <i></i>
-        {/* <div className='dash' id="share">
-                <a href=""><img src={AvatarIcon} alt="" /></a>
-                <img id='cursor' src={Cursor} alt="" />
-                <img id='Tooltip' src={Tooltip} alt="" />
-        </div>
-        <div className='dash' id="menu">
-                <a href=""><img src={Menu} alt="" /></a>
-        </div> */}
         <div className="dash">
             <div id="share">
                 <a href=""><img src={AvatarIcon} alt="" /></a>

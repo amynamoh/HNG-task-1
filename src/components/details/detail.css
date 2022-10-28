@@ -13,7 +13,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: var(--color-gray-900);
         background: var(--color-gray-200);
         border: 1px solid var(--color-gray-200);
         border-radius: 8px;
@@ -32,9 +31,15 @@
         /* Shadow/xs focused 4px primary-100 */
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px var(--color-primary-100);
 }
+.linkSection a:click {
+        background: var(--color-gray-200);
+        border: 1px solid var(--color-gray-400);
+        /* Shadow/xs focused 4px primary-100 */
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px var(--color-primary-100);
+}
 .linkSection a:disabled {
-    background: var(--color-gray-25);
-    border: 1px solid #F2F4F7;
+        background: var(--color-gray-25);
+        border: 1px solid var(--color-gray-100);
         /* Shadow/xs */
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
@@ -57,12 +62,4 @@
     .profileicons {
             margin: 24px 0 32px;
         }
-    .linkSection a:click {
-              background: var(--color-gray-200);
-              border: 1px solid var(--color-gray-400);
-              /* Shadow/xs focused 4px primary-100 */
-              box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px var(--color-primary-100);
-          }
-        
-    
 }
