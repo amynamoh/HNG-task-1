@@ -78,6 +78,8 @@
 .dash a:click {
     /* Focus ring/4px gray-100 */
     box-shadow: 0px 0px 0px 4px var(--color-gray-100);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .dash a:disabled{

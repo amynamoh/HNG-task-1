@@ -36,6 +36,8 @@
         border: 1px solid var(--color-gray-400);
         /* Shadow/xs focused 4px primary-100 */
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px var(--color-primary-100);
+        width: 100%;
+        padding: 0 32px;
 }
 .linkSection a:disabled {
         background: var(--color-gray-25);
@@ -53,7 +55,6 @@
     padding: 24px 0;
     margin: 24px 0 64px;
 }
-@media(hover:hover){}
 /* media queries (phone) */
 @media screen and (max-width: 600px) {
     .linkSection {
