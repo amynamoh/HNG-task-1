@@ -8,6 +8,7 @@ import profilePictureHover from '../../assets/meehover.png'
 import Menu from '../../assets/menuIcon.png'
 
 
+
 const profile = () => {
   return (
     <section className='profileSection'>
@@ -30,7 +31,6 @@ const profile = () => {
                 <a href=""><img src={Menu} alt="" /></a>
             </div>
         </div>
-        
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import './footer.css'
 import Zuri from '../../assets/zuri.png'
 import I4g from '../../assets/I4G.png'
+import './footer.css'
 
 
 const footer = () => {
@@ -13,7 +13,7 @@ const footer = () => {
         <img src={I4g} alt=""/>
 
       </div>
-    </footer>
+    </footer> 
   )
 }
 

@@ -1,3 +1,4 @@
+/* profile */
 .profileSection {
     display: flex;
     flex-direction: column;
@@ -106,6 +107,7 @@
 
 
 @media screen and (max-width: 600px) {
+    /* profile */
     .profileSection {
             padding: 64px 0 32px;
     }
@@ -115,4 +117,5 @@
     #menu {
         display: block;
     }
+
 }

@@ -1,18 +1,24 @@
 import React from 'react'
-import Profile from './components/profile/profile'
-import Details from './components/details/detail'
-import Footer from './components/footer/footer'
+import Home from './pages/home'
+import Contact from './pages/contact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
+
 
 const App = () => {
   return (
-    // <div>App</div>
-    <>
-    <Profile/>
-    <Details/>
-    <Footer/>
-    
-    </>
-  )
+
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/contact' element={<Contact/>} />
+        </Routes>
+      </Router>
+    </div>
+
+  );
 }
 
 export default App

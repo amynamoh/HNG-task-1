@@ -1,7 +1,8 @@
 footer {
     padding: 48px 112px;
 }
-.footContent{
+
+.footContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,19 +11,20 @@ footer {
     border-top: 1px solid #EAECF0;
 }
 
-/* media queries (phone) */
+
+
 @media screen and (max-width: 600px) {
     footer {
-            padding: 32px 16px;
-        }
-    
-        .footContent {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 32px;
-            gap: 16px;
-            border-top: 1px solid #EAECF0;
-        }
+        padding: 32px 16px;
+    }
+
+    .footContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 32px;
+        gap: 16px;
+        border-top: 1px solid #EAECF0;
+    }
 }
