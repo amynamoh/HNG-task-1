@@ -19,7 +19,7 @@ form {
 .username{
     width: 50%;
 }
-.checkbox{
+.checkbox{ 
     display: flex;
     align-items: center;
     gap: 8px;

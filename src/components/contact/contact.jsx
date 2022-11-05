@@ -91,7 +91,6 @@ const Contact = () => {
                 onChange={onChange}
                 />
                ))}
-               
                <div className='checkbox'>
                   <input type="checkbox" required name="" id="" errorMessage={"It should be a valid email address!"}/>
                   <label for="message"><h3>You agree to providing your data to Amina who may contact you.</h3></label>
