@@ -25,3 +25,5 @@ const details = () => {
 }
 
 export default details
+
+// href="https://amina-hng-task-2.netlify.app"

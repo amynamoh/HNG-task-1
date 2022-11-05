@@ -2,7 +2,7 @@
     display: grid;
 }
 
-input{
+input, textarea{
     padding: 10px 14px;
     border-radius: 8px;
     border: 1px solid #D0D5DD;
@@ -34,12 +34,22 @@ input:valid[focused="true"] {
     border: 1px solid #84CAFF;
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
+textarea:valid[focused="true"] {
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
 
 input:invalid[focused="true"] {
     border: 1px solid #F89687;
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
 }
-
+textarea:invalid[focused="true"] {
+    border: 1px solid #F89687;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+}
 input:invalid[focused="true"]~span {
+    display: block;
+}
+textarea:invalid[focused="true"]~span {
     display: block;
 }

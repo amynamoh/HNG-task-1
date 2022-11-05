@@ -4,8 +4,6 @@ import { useState } from "react";
 import Form from "../forms/form";
 
 
-
-
 const Contact = () => {
     const [values, setValues] = useState({
     Firstname: "",
@@ -18,7 +16,6 @@ const Contact = () => {
 
   const inputs = [
     {
-      // id: 1,
       id: "first_name",
       name: "First Name",
       className:"username",
@@ -30,7 +27,6 @@ const Contact = () => {
       required: true,
     },
     {
-      // id: 2,
       id: "last_name",
       name: "Last Name",
       className:"username",
@@ -42,7 +38,6 @@ const Contact = () => {
       required: true,
     },
     {
-      // id: 3,
       id: "email",
       name: "email",
       type: "email",
@@ -51,16 +46,14 @@ const Contact = () => {
       label: "Email",
       required: true,
     },   
-    {
-      // TEXTAREA
-      // id: 4,
-      id: "message",
-      className:"textarea",
-      type: "textarea",
-      placeholder: "Send me a message and I'll reply you as soon as possible...",
-      errorMessage: "Please enter a mesage!",
-      required: true,
-    },
+    // {
+    //   id: "message",
+    //   className:"textarea",
+    //   type: "textarea",
+    //   placeholder: "Send me a message and I'll reply you as soon as possible...",
+    //   errorMessage: "Please enter a mesage!",
+    //   required: true,
+    // },
 
   ];
 
@@ -91,12 +84,31 @@ const Contact = () => {
                 onChange={onChange}
                 />
                ))}
-               <div className='checkbox'>
-                  <input type="checkbox" required name="" id="" errorMessage={"It should be a valid email address!"}/>
-                  <label for="message"><h3>You agree to providing your data to Amina who may contact you.</h3></label>
-               </div>    
+                            
+                {/* <div className="username">
+                    <div>
+                      <label>First Name</label>
+                      <input type="text" id="first_name" name="firstname" placeholder="Enter your first name" errorMessage="First Name should be 3-16 characters and shouldn't include any special character!" pattern= "^[A-Za-z0-9]{3,16}$" required />
+                    </div>
+                    <div>
+                      <label>Last Name</label>
+                      <input type="text" id="last_name" name="lastname" placeholder="Enter your last name" errorMessage="Last Name should be 3-16 characters and shouldn't include any special character!" pattern= "^[A-Za-z0-9]{3,16}$" required />
+                    </div>
+                </div>
+                <div>
+                      <label>Email</label>
+                      <input type="email" id="email" name="email" placeholder="yourname@email.com" errorMessage="It should be a valid email address!" required />
+                </div> */}
 
-               <button id='btn__submit'>Submit</button>             
+                <div>
+                    <textarea name="" id="message" errorMessage="please enter a message!" required placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
+                </div>
+               
+                <div className='checkbox'>
+                  <input type="checkbox" required name="checkbox" id="" errorMessage="It should be a valid email address!"/>
+                  <label for="message"><h3>You agree to providing your data to Amina who may contact you.</h3></label>
+                </div>
+                <button id='btn__submit'>Submit</button>             
             </form>
             </div> 
     </section>
